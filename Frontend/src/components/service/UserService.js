@@ -1,7 +1,7 @@
 import axios from "axios";
 
 class UserService{
-    static BASE_URL = "http://43.204.140.134:1010"
+    static BASE_URL = "http://localhost:1010"
 
 
     //Fetch function based in USERID view employeetask
