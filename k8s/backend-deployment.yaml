@@ -16,7 +16,7 @@ spec:
       - name: backend
         image: your-docker-repo/backend:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 1010
         env:
         - name: SPRING_DATASOURCE_URL
           value: jdbc:mysql://mysql:3306/usermanagement
@@ -33,8 +33,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 1010
+      targetPort: 1010
       nodePort: 30001
   selector:
     app: backend
